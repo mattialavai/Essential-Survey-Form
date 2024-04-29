@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+  <html lang="en">
+
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="title">Essential Survey Form</h1>
+        <p id="description">We know that everyone is so busy these days - us here at ESSENTIAL being no different - so we wanted to sent you this friendly reminder to take the survey. It's short, and all it takes are just a few clicks. Thanks for being such an important
+            part of our community!</p>
+        <form id="survey-form" 
+        action="https://formspree.io/f/xleqodzj"
+        method="POST"
+        enctype="multipart/form-data">
+            <fieldset>
+                <label id="name-label">Enter Your  Full Name: <input id="name" type="text" placeholder="name" required />
+                </label>
+                <label id="email-label">Enter Your Email: <input id="email" type="email" placeholder="email" required />
+                </label>
+                <label id="number-label">Age(optional) <input id="number" type="number" placeholder="Age" min="18" max="100" /><br> </label>
+
+
+      <label for="referrer">Which option best describes your current role?
+      <select id="dropdown">
+        <option value="">(select one role)</option>
+            <option value="1">student</option>
+            <option value="2">Full time job</option>
+            <option value="3">Part time job</option>
+            <option value="4">Prefer not say!</option>
+            <option value="5">Other</option>
+      </select>
+      
+      <!--FIRST RADIO BUTTON--->
+
+   <label for="referrer">Would you recommend Essential to a friend?
+        <label for="definitely">
+          <input value="definitely" type="radio" name="test" id="definitely" class="inline" /> Definitely</label>
+
+                <label for="maybe">
+          <input value="maybe" type="radio" name="test" class="inline" id="maybe" /> Maybe</label>
+
+                <label for="not sure">
+          <input value="not sure" type="radio" name="test" class="inline" id="not sure" /> Not Sure</label>
+                </label>
+
+                <!--SECOND DROPDOWN--->
+                <label for="referrer">What was the reason that attracted you to become our customer? </label>
+                <select id="dropdown">
+        <option value="">(select one role)</option>
+            <option value="1">Brand Value</option>
+            <option value="2">Marketing and Promotion</option>
+            <option value="3">Quality of our Products</option>
+            <option value="3">Pricing</option>
+            <option value="4">Other</option>
+            </select>
+                <!---SECOND RADIO BUTTON--->
+
+                <label for="referrer">How easy is the transaction process with our company? 
+        <label for="very-difficult">
+          <input value="very diffIcult" type="radio" name="recommend" class="inline" id="very difficult" /> Very Easy</label>
+
+                <label for="difficult">
+          <input value="difficult" type="radio" name="recommend" class="inline" id="difficult" /> Easy</label>
+                <label for="easy">
+          <input value="easy" type="radio" name="recommend" class="inline" id="easy" /> Very Difficult</label>
+
+                <label for="very easy">
+          <input value="very easy" type="radio" name="recommend" class="inline" id="very easy" /> Difficult</label>
+                </label>
+
+                <!---CHECKBOX---->
+                <label for="referrer">What would you like to see improved? (Check all that apply)
+        </label>
+                <label for="time-management">
+          <input id="time-management" type="checkbox" required name="time-management" class="inline" value="time-management" /> Time Management
+        </label>
+                <label for="delegation">
+          <input id="delegation" type="checkbox" required name="delegation" class="inline" value="delegation"/> Delegation
+        </label>
+                <label for="communition">
+          <input id="communition" type="checkbox" required name="communication" class="inline" value="communication" /> Communication
+        </label>
+                <label for="engagement">
+          <input id="engagement" type="checkbox" required name="engagement" class="inline" value="engagement" /> Engagement
+        </label>
+      </label>
+                <label for="comment">Is there anything else you would like us to Know?
+          <textarea id="comment" name="comment" type="text" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+        </label>
+            </fieldset>
+            <input type="submit" id="submit" value="Submit" />
+        </form>
+        <script src="script.js"></script>
+      </body>
+    </html>
